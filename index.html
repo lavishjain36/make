@@ -1,58 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CRUD</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <table>
+    <h2>Currency</h2>
+
+    <input
+      type="text"
+      id="myInput"
+      onkeyup="myFunction()"
+      placeholder="Search by Country...."
+    />
+
+    <table id="myTable">
+      <tr class="header">
+        <th>Country</th>
+        <th>National Currency</th>
+      </tr>
+
       <tr>
-        <td>
-          <form onsubmit="event.preventDefault();onFormSubmit();">
-            <div>
-              <label for="">Full Name</label>
-              <input type="text" name="fullname" id="fullname" />
-            </div>
+        <td>India</td>
+        <td>INR</td>
+      </tr>
 
-            <div>
-              <label for="">Employee code</label>
-              <input type="text" name="empCode" id="empCode" />
-            </div>
+      <tr>
+        <td>USA</td>
+        <td>Dollar</td>
+      </tr>
 
-            <div>
-              <label for="">Salary</label>
-              <input type="text" name="salary" id="salary" />
-            </div>
+      <tr>
+        <td>China</td>
+        <td>Chinese yuan</td>
+      </tr>
 
-            <div>
-              <label for="">City</label>
-              <input type="text" name="city" id="city" />
-            </div>
-
-            <div class="form-action-buttons">
-              <input type="submit" value="Submit" />
-            </div>
-          </form>
-        </td>
-
-        <td>
-          <table class="list" id="employeeList">
-            <thead>
-              <tr>
-                <th>Full Name</th>
-                <th>Employee Code</th>
-                <th>Salary</th>
-                <th>City</th>
-              </tr>
-            </thead>
-
-            <!-- ///created empty table body -->
-            <tbody></tbody>
-          </table>
-        </td>
+      <tr>
+        <td>Italy</td>
+        <td>Euro</td>
       </tr>
     </table>
   </body>
