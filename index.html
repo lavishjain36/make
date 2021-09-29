@@ -1,45 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML FORMS PRACTICE</title>
   </head>
-
   <body>
-    <h2>Currency</h2>
+    <div id="main">
+      <form action="https://www.guvi.in" method="get">
+        <fieldset>
+          <legend><b>Registration Form</b></legend>
 
-    <input
-      type="text"
-      id="myInput"
-      onkeyup="myFunction()"
-      placeholder="Search by Country...."
-    />
+          <label for="fname">First Name</label><br />
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="First Name"
+            required="required"
+          />
+          <br /><br />
 
-    <table id="myTable">
-      <tr class="header">
-        <th>Country</th>
-        <th>National Currency</th>
-      </tr>
+          <label for="name">Last Name</label><br />
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Last Name"
+            required="required"
+          />
+          <br /><br />
 
-      <tr>
-        <td>India</td>
-        <td>INR</td>
-      </tr>
+          <label for="mail">Email</label><br />
+          <input type="email" id="email" name="email" /><br><br>
 
-      <tr>
-        <td>USA</td>
-        <td>Dollar</td>
-      </tr>
+          <label for="birthdate"></label>Birthdate</label><br />
+          <input type="date" id="birthdate" name="birthdate" /><br>
 
-      <tr>
-        <td>China</td>
-        <td>Chinese yuan</td>
-      </tr>
+          <button id="btn">Submit</button>
+          <input type="submit" value="Register">
+        </fieldset>
 
-      <tr>
-        <td>Italy</td>
-        <td>Euro</td>
-      </tr>
-    </table>
+
+        <fieldset>
+          <legend>Rating</legend>
+          <label for="points">Points from 0 to 10</label>
+      
+          <input type="range" name="points" id="points" step="0.1" min="0" max="10" onchange="updateText(this.value)">
+          <input type="number" id="textinput" name="textinput">
+        </fieldset>
+      </form>
+    </div>
   </body>
   <script src="script.js"></script>
 </html>
