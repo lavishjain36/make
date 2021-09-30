@@ -4,54 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML FORMS PRACTICE</title>
+    <title>Make-Up</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div id="main">
-      <form action="https://www.guvi.in" method="get">
-        <fieldset>
-          <legend><b>Guvi Registration Form</b></legend>
+    <h1>Make-UP</h1>
 
-          <label for="fname">First Name</label><br />
-          <input
-            type="text"
-            id="fname"
-            name="fname"
-            placeholder="First Name"
-            required="required"
-          />
-          <br /><br />
+    <div id="app" class="container"></div>
 
-          <label for="name">Last Name</label><br />
-          <input
-            type="text"
-            id="lname"
-            name="lname"
-            placeholder="Last Name"
-            required="required"
-          />
-          <br /><br />
+    <a href="http://" target="_blank"></a>
 
-          <label for="mail">Email</label><br />
-          <input type="email" id="email" name="email" /><br><br>
-
-          <label for="birthdate"></label>Birthdate</label><br />
-          <input type="date" id="birthdate" name="birthdate" /><br>
-
-          <button id="btn">Submit</button>
-          <input type="submit" value="Register">
-        </fieldset>
-
-
-        <fieldset>
-          <legend>Rating</legend>
-          <label for="points">Points from 0 to 10</label>
-      
-          <input type="range" name="points" id="points" step="0.1" min="0" max="10" onchange="updateText(this.value)">
-          <input type="number" id="textinput" name="textinput">
-        </fieldset>
-      </form>
-    </div>
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
